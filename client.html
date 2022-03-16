@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="al:andriod:url" />
+
+    <title>Document</title>
+  </head>
+  <script>
+    // this works for the ios device
+    // const clicked = () => {
+    //   window.location.href = "http://localhost:3000";
+    //   setTimeout(() => {
+    //     window.location.href =
+    //       "https://apps.apple.com/us/app/facebook/id284882215";
+    //   });
+    // };
+    // const decode=decodeURIComponent("http://localhost:3000/deeplink?url=app://account")
+    // const andriod = async() => {
+    //     const data=await fetch(decode)
+    // };
+    //this is for andriod device
+    // fetch("http://localhost:3000/deeplink?url")
+    // const start = Date.now();
+    // const try_close = () => {
+    //   location.replace("about:blank");
+    // };
+    // const store_close = () => {
+    //   const now = Date.now();
+    //   if (now - start > 3000) {
+    //     try_close();
+    //   } else {
+    //     window.location.replace("https://play.google.com/store/apps/details?id=com.facebook.katana.");
+    //     // window.open(
+    //     //   "http://intent://facebook/#Intent;scheme=facebook;package=com.facebook.katana;end"
+    //     // );
+    //     setInterval(try_close, 1000);
+    //   }
+    // };
+    // const clicked = () => {
+    //   setInterval(store_close, 2000);
+    // };
+    const clicked = () => {
+      let isIOS = /iPad|iPhone|iPod|Andriod/.test(navigator.platform);
+      if (isIOS) {
+        window.location.replace("https://urlgeni.us/instagram/i00f");
+      }
+    };
+  </script>
+  <body>
+    <!-- <button onclick="clicked()">IOS Devices</button>
+    <button onclick="andriod()">Andriod</button> -->
+    <!-- <a href="https://apps.apple.com/us/app/facebook/id284882215"></a> -->
+    <div>Ademola</div>
+    <button onclick="clicked()">Start</button>
+
+    <a href="https://urlgeni.us/instagram/i00f">Link to my stuff</a>
+
+    <!-- <a href="http://intent:#Intent;action=com.facebook.katana;end">Link to my stuff</a> -->
+  </body>
+</html>
